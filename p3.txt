@@ -1,7 +1,19 @@
 Hash table:
+    memory: O(N + K)
+    access speed: O(1)
+    Convenience: Convenient for adding and removing entity component matches but could get computationally expensive if we need to rehash.
 
 Map:
+    memory: O(N + K)
+    access speed: O(logN)
+    Convenience: It keeps entities sorted by their ID's. Insertion and deletion takes O(logN).
 
 Sparse mapping 1:
+    memory: O(NK)
+    access speed: O(1)
+    Convenience: Adding entities is convenient since we add them by appending a row with their info.
 
 Sparse mapping 2:
+    memory: O(NK)
+    access speed: O(1)
+    Convenience: Adding an entity requires that we extend the vector that holds them for that component. Adding/Removing components is straightforward.

@@ -1,4 +1,19 @@
 2a. 
+    std::forward<arg1Type>(arg1),
+    std::forward<arg2Type>(arg2),
+    ...,
+    std::forward<argNType>(argN),
 2b. 
+    (f(1) + 1),
+    (f(2) + 1),
+    ...,
+    (f(N) + 1)
 2c. 
+    std::tupple<arg1, arg2,.., argN>
 2d. 
+    std::tuple<
+        std::vector<arg1Type>,
+        std::vector<arg2Type>,
+        ...,
+        std::vector<argNType>
+    >
